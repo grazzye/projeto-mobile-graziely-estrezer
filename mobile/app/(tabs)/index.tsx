@@ -16,32 +16,30 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">bem vindo ao inter !!</ThemedText>
-        <HelloWave />
+        <ThemedText type="title">bem vindo ao inter </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle"></ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> inter.
-          Press{' '}
+           <ThemedText type="defaultSemiBold"></ThemedText>
+        
           <ThemedText type="defaultSemiBold">
             {Platform.select({
               ios: 'cmd + d',
               android: 'cmd + m',
-              web: 'F12'
+              web: ''
             })}
           </ThemedText>{' '}
-          to open developer tools.
+        
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">saldo: 345,90</ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">login</ThemedText>
         <ThemedText>
           When you're ready, run{' '}
           <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
@@ -66,7 +64,7 @@ const styles = StyleSheet.create({
   },
   reactLogo: {
     height: '100%',
-    width: '70%',
+    width: '100%',
     bottom: 0,
     left: 0,
     position: 'absolute',
