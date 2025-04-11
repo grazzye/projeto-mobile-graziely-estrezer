@@ -12,81 +12,80 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
-          style={styles.headerImage}
-        />
+        <Image
+        source={require('@/assets/images/inter.png')}
+        style={styles.reactLogo}
+      />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText type="title">área de transferência</ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
+      <ThemedText></ThemedText>
+      <Collapsible title="CONTATOS FAVORITOS"><ThemedText>yasmina bunda fina</ThemedText>
+      <ThemedText>41 7896-6574</ThemedText>
+      <ThemedText>mãe</ThemedText>
+      <ThemedText>41 8000-6543</ThemedText>
+      <ThemedText>pai</ThemedText>
+      <ThemedText>41 4357-7864</ThemedText>
+      <ThemedText>tia </ThemedText>
+      <ThemedText>456.789.654-98</ThemedText>
+
+      
         <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
+          <ThemedText type="link">NOVO AGENDAMENTO</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
+      <Collapsible title="CADASTRAR CHAVE PIX">
         <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
+        <ThemedText type="link">NOVO CADASTRO</ThemedText>
+          {' '}
+          <ThemedText type="defaultSemiBold"></ThemedText> 
         </ThemedText>
       </Collapsible>
-      <Collapsible title="Images">
+      <Collapsible title="PIX AGENDADO">
         <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
+          você não possui agendamentos <ThemedText type="defaultSemiBold"></ThemedText>{' '}
+          <ThemedText type="defaultSemiBold"></ThemedText> 
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+      
         <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
+          <ThemedText type="link">NOVO AGENDAMENTO</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Custom fonts">
+      <Collapsible title="MINHAS CHAVES">
         <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
+          <ThemedText type="defaultSemiBold"></ThemedText> chaves cadastradas{' '}
           <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
+          
           </ThemedText>
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
+          <ThemedText type="link">CADASTRAR CHAVE</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
+      <Collapsible title="PIX SAQUE E PIX TROCO">
+        <ThemedText> sacar com qr code {' '}
+          <ThemedText type="defaultSemiBold"></ThemedText>
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
+          <ThemedText type="link">COMO FUNCIONA</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Animations">
+      <Collapsible title="RECLAME AQUI">
+        
         <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
+         {' '}
+          <ThemedText type="defaultSemiBold"></ThemedText> 
+        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">  
+        <ThemedText type="defaultSemiBold"></ThemedText>{' '}
+        </ExternalLink>
         </ThemedText>
         {Platform.select({
           ios: (
             <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
+              <ThemedText type="defaultSemiBold"></ThemedText>{' '}
+              <ThemedText type="link">SUPE</ThemedText>
+              
             </ThemedText>
           ),
         })}
@@ -97,13 +96,16 @@ export default function TabTwoScreen() {
 
 const styles = StyleSheet.create({
   headerImage: {
-    color: '#808080',
-    bottom: -90,
-    left: -35,
+    color: 'orange',
+    bottom: 100,
+    left: 100,
     position: 'absolute',
   },
   titleContainer: {
     flexDirection: 'row',
     gap: 8,
   },
+  reactLogo:{
+  }
+  
 });

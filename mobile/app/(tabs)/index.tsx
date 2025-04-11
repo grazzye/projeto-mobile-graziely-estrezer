@@ -19,9 +19,11 @@ export default function HomeScreen() {
         <ThemedText type="title">bem vindo ao inter </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle"></ThemedText>
+        <ThemedText type="subtitle">cartão de crédito</ThemedText>
         <ThemedText>
-           <ThemedText type="defaultSemiBold"></ThemedText>
+        <ThemedText type="subtitle">cartão de crédito</ThemedText>
+        <ThemedText type="subtitle">aréa de pix</ThemedText>
+        
         
           <ThemedText type="defaultSemiBold">
             {Platform.select({
@@ -39,13 +41,13 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">login</ThemedText>
+        <ThemedText type="subtitle">login ____________________________________</ThemedText>
         <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          
+          <ThemedText type="defaultSemiBold"></ThemedText> 
+          <ThemedText type="defaultSemiBold"></ThemedText> 
+          <ThemedText type="defaultSemiBold"></ThemedText> 
+          <ThemedText type="defaultSemiBold"></ThemedText>
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
